@@ -12,5 +12,5 @@ else
     -name "*${version}*" \
     -wholename "*/target/*" \
     ! -wholename "./target/*" \
-    -exec cp -v '{}' ./target ';'
+    -exec cp --preserve=all -v '{}' ./target ';'
 fi
