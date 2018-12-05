@@ -8,7 +8,7 @@ else
   version="${1}"
   
   find . -type f \
-    -regex '.*\.\(jar\|war\|pom\)\(.asc\)?$' \
+    -regex '.*\.\(jar\|war\|pom\|zip\)\(.asc\)?$' \
     -name "*${version}*" \
     -wholename "*/target/*" \
     ! -wholename "./target/*" \
