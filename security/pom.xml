@@ -27,8 +27,8 @@
     <artifactId>security</artifactId>
     <packaging>bundle</packaging>
 
-    <name>Wren Security Commons JSON Patch - Library</name>
-    <description>Wren Security JSON Patch project</description>
+    <name>Wren Security Commons - Security Library</name>
+    <description>Common library for low-level cryptographic key handling, including the instantiation and handling of key stores and the keys inside.</description>
 
     <dependencies>
         <dependency>
