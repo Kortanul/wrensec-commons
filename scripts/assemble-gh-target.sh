@@ -9,6 +9,8 @@ else
   
   find . -type f \
     -regex '.*\.\(jar\|war\|pom\)\(.asc\)?$' \
-    -wholename "*/target/*${version}*" \
+    -name "*${version}*" \
+    -wholename "*/target/*" \
+    ! -wholename "./target/*" \
     -exec cp -v '{}' ./target ';'
 fi
